@@ -1,0 +1,462 @@
+.loaded #loader-wrapper .loader-section.section-left {
+  -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: translateX(-100%);  /* IE 9 */
+  transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.intro {
+  display: none;
+}
+
+.showintro {
+  display: block;
+}
+
+.flag {
+  margin: 0px;
+  height: 70px;
+  width: 80px;
+  padding: 0 px;
+  margin: 0 0;
+  filter: grayscale(0%);
+  cursor: pointer;
+}
+
+.flag-animation-1 {
+  
+  animation-delay: 2s, 7s;
+  animation-name: flag-color, flag-blink;
+  animation-duration: 6s, 1s;
+  animation-fill-mode: backwards;
+  
+}
+
+.flag-animation-2 {
+  
+  animation-delay: 3s, 7s;
+  animation-name: flag-color, flag-blink;
+  animation-duration: 4s, 1s;
+  animation-fill-mode: backwards;
+}
+
+.flag-animation-3 {
+  
+  animation-delay: 5s, 7s;
+  animation-name: flag-color, flag-blink;
+  animation-duration: 2s, 1s;
+  animation-fill-mode: backwards;
+}
+
+.flag-box {
+  position: relative;  
+}
+
+.flag-box:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 80px;
+  position: relative;
+  /* border: 4px dotted red; */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+.intro-hide {
+  display: none;
+}
+
+.atoz-larg {
+  position: relative;
+  margin: auto;
+  margin-top: 5%;
+  width: 40%;
+}
+
+.atoz-larg-hide {
+  position: absolute;
+  background-color: #fff;
+  animation-name: atoz-anime;
+  animation-fill-mode: forwards;
+}
+
+.atoz-anime-part1 {
+  height: 53%;
+  width: 30%;
+  top:0px;
+  animation-delay: 2.5s;
+  animation-duration: 2s;
+}
+
+.atoz-anime-part2 {
+  
+  height: 58%;
+  width: 44%;
+  top:0px;
+  right: 28%;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  
+}
+
+.atoz-anime-part3 {
+  height: 53%;
+  width: 28%;
+  top:0px;
+  right: 0px;
+  animation-delay: 3.5s;
+  animation-duration: 2s;
+}
+
+.atoz-anime-part4 {
+  height: 47%;
+  width: 28%;
+  bottom:0px;
+  right: 0px;
+  animation-delay: 4.5s;
+  animation-duration: 2s;
+}
+
+.atoz-anime-part5 {
+  height: 42%;
+  width: 44%;
+  bottom:0px;
+  right: 28%;
+  animation-delay: 4.5s;
+  animation-duration: 2s;
+}
+
+.atoz-anime-part6 {
+  height: 47%;
+  width: 28%;
+  bottom:0px;
+  left: 0px;
+  animation-delay: 4.5s;
+  animation-duration: 2s;
+}
+
+.atoz-blink {
+  animation-name: atoz-blink;
+  animation-fill-mode: forwards;
+  animation-delay: 6s;
+  animation-duration: 0.65s;
+}
+
+@media (max-width: 768px) {
+  .atoz-larg {
+    
+    margin-top: 50%;
+    width: 80%;
+  }
+
+  .atoz-anime-part2 {
+    height: 56.5%;
+    animation-delay: 3s;
+  }
+
+  .atoz-anime-part5 {
+    height: 43.5%;
+    animation-delay: 4.5s;
+  }
+}
+
+
+
+
+.card {
+  background-color: #fff;
+  color: var(--primary-color);
+  border-radius: 40px;
+  box-shadow: 0 3px 10px var(--primary-color);
+  padding: 20px;
+  margin: 10px;
+
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-down {
+  position: relative;
+  bottom: 1%;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px #fff solid;
+}
+
+.btn:hover {
+  /* transform: scale(1.1); */
+  background-color: var(--secondary-color);
+}
+
+/* Backgrounds & colored buttons */
+.stu-login {
+  border-radius: 10px;
+  animation-name: student-login;
+  animation-delay: 7s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2, end);
+}
+;
+
+.bg-primary,
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.bg-light,
+.btn-light {
+  background-color: var(--light-color);
+  color: #333;
+}
+
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+  color: #fff;
+}
+
+
+.btn-center {
+  margin: 20px 0px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Text colors */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.text-light {
+  color: var(--light-color);
+}
+
+/* Text sizes */
+.lead {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.sm {
+  font-size: 1rem !important;;
+}
+
+.md {
+  font-size: 2rem !important;;
+}
+
+.lg {
+  font-size: 3rem !important;;
+}
+
+.xl {
+  font-size: 4rem !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+.text-center {
+  text-align: justify;
+  text-align-last: center;
+  /* font-family: 'BYekan'; */
+  font-size: small;
+  /* font-weight: bold; */
+}
+
+.text-persian {
+  font-family: 'BYekan' !important;
+}
+
+.text-primary-color {
+  color: var(--secondary-color);
+}
+
+/* Alert */
+.alert {
+  background-color: var(--light-color);
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.alert i {
+  margin-right: 10px;
+}
+
+.alert-success {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.alert-error {
+  background-color: var(--error-color);
+  color: #fff;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+}
+
+.grid-vertical {
+  grid-template-columns: none;
+  grid-template-rows:max-content;
+  align-items:flex-end;
+}
+
+.grid-3 {
+   grid-template-columns: repeat(3, 1fr) !important;
+   margin-top: 50px;
+}
+
+.grid-8 {
+  grid-template-columns: repeat(8, 1fr);
+  margin-top: 50px;
+}
+
+.span-2 {
+  grid-column-end: span 2;
+}
+
+.span-3 {
+  grid-column-end: span 3;
+}
+
+/* Margin */
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
+}
+
+.my-3 {
+  margin: 2rem 0;
+}
+
+.my-4 {
+  margin: 3rem 0;
+}
+
+.my-5 {
+  margin: 4rem 0;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 1.5rem;
+}
+
+.m-3 {
+  margin: 2rem;
+}
+
+.m-4 {
+  margin: 3rem;
+}
+
+.m-5 {
+  margin: 4rem;
+}
+
+/* Padding */
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 1.5rem 0;
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+
+.py-4 {
+  padding: 3rem 0;
+}
+
+.py-5 {
+  padding: 4rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 3rem;		
+}
+
+.p-5 {
+  padding: 4rem;
+}

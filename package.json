@@ -1,0 +1,26 @@
+{
+	"name": "fcc-learn-node-with-express",
+	"version": "0.1.0",
+	"dependencies": {
+		"body-parser": "^1.20.0",
+		"cookie-parser": "^1.4.3",
+		"dotenv": "^16.0.0",
+		"express": "^4.17.3",
+		"fcc-express-bground": "https://github.com/freeCodeCamp/fcc-express-bground-pkg.git",
+		"mongodb": "^3.7.3",
+		"mongoose": "^5.13.14",
+		"mysql": "^2.18.1"
+	},
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js",
+		"devStart": "nodemon server.js"
+	},
+	"devDependencies": {
+		"body-parser": "^1.20.0",
+		"cookie-parser": "^1.4.3",
+		"dotenv": "^16.0.0",
+		"express": "^4.17.3",
+		"nodemon": "^2.0.15"
+	}
+}

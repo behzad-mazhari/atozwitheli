@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, width=device-width, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/circular.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/fonts.css" />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->  
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <title>A to Z With Eli | courses</title>
+    <link rel = "icon" href = "/images/logos/icon.png" type = "image/x-icon">
+
+
+</head>
+<body>
+
+    <div class="preloader-container">
+        <div class="preloader">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+        <div class="bar bar4"></div>
+        <div class="bar bar5"></div>
+        <div class="bar bar6"></div>
+        <div class="bar bar7"></div>
+        <div class="bar bar8"></div>
+        <div class="bar bar9"></div>
+        <div class="bar bar10"></div>
+        <div class="bar bar11"></div>
+        <h2 style="text-align: center; color: var(--secondary-color);">LOADING</h2>
+        </div>
+    </div>
+
+    <section class="intro-hide">
+        <!--Navigation bar-->
+        <div id="nav-placeholder"></div>
+        <script>
+            $(function(){
+                $("#nav-placeholder").load("views/nav.html");
+            });
+        </script>
+        <!--end of Navigation bar-->
+
+        <!-- Courses -->
+        <section class="slideshow">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="images/courses/kids.jpg">
+                    <div class="text">Kids</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="images/courses/adults.jpg">
+                    <div class="text">Adults (Elementary, Intermediate, Advance)</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="images/courses/conversation.jpg">
+                    <div class="text">Conversation</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="images/courses/ielts.jpg">
+                    <div class="text">IELTS Courses</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="images/courses/french.jpg">
+                    <div class="text">French (Elementary, Intermediate, Advance)</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="images/courses/italian.jpg">
+                    <div class="text">Italian (Elementary, Intermediate, Advance)</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </section>
+
+        <!-- Head -->
+        <section class="docs-head bg-primary py-3">
+            <div class="container">
+                <div class="card text-center">
+                    <h1 class="md">:practical_courses</h1>
+                    <p class="lead">
+                        :2-courses_description
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Docs main -->
+        <section class="courses">
+            <div class="container grid text-center">
+                <!-- <div class="card bg-light p-3">
+                    <h3 class="my-2">Essentials</h3>
+                    <nav>
+                        <ul>
+                            <li><a class="text-primary" href="#">Introduction</a></li>
+                            <li><a href="#">About Loruki</a></li>
+                            <li><a href="#">Installation</a></li>
+                        </ul>
+                    </nav>
+
+                    <h3 class="my-2">Deployment</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Setting up a container</a></li>
+                                <li><a href="#">Using the CLI</a></li>
+                                <li><a href="#">Managing resources</a></li>
+                                <li><a href="#">Upgrade & downgrade</a></li>
+                        </ul>
+                    </nav>
+                </div> -->
+                <div class="card grid grid-vertical" id="kids-course">
+                    <div>
+                        <h2 class="alert alert-success">:elementary</h2>
+                        <p>:2-elementary-text</p>
+                    </div>
+                    <div>
+                        <input class="btn btn-primary btn-down" type="button" onclick="localStorage.removeItem('intro'); location.href='/#registerationform';" value=":register-link"/>
+                    </div>
+                </div>
+                <div class="card grid grid-vertical" id="ielts-course group-classes online-courses">
+                    <div>
+                        <h2 class="alert alert-success">:intermediate</h2>
+                        <p>:2-intermediate-text</p>
+                    </div>
+                    <div>
+                        <input class="btn btn-primary btn-down" type="button" onclick="localStorage.removeItem('intro'); location.href='/#registerationform';" value=":register-link"/>
+                    </div>
+                </div>
+                <div class="card grid grid-vertical" id="conversation">
+                    <div>
+                        <h2 class="alert alert-success">:conversation</h2>
+                        <p>:2-conversation-text</p>
+                    </div>
+                    <div>
+                        <input class="btn btn-primary btn-down" type="button" onclick="localStorage.removeItem('intro'); location.href='/#registerationform';" value=":register-link"/>
+                    </div>
+                </div>
+                <div class="card grid grid-vertical" id="advanced">
+                    <div>
+                        <h2 class="alert alert-success">:advanced</h2>
+                        <p">:2-advanced-text</p>
+                    </div>
+                    <div>
+                        <input class="btn btn-primary btn-down" type="button" onclick="localStorage.removeItem('intro'); location.href='/#registerationform';" value=":register-link"/>
+                    </div>
+                </div>
+                <div class="card grid grid-vertical" id="">
+                    <div>
+                        <h2 class="alert alert-success">:story</h2>
+                        <p>:2-story-text</p>
+                    </div>
+                    <div>
+                        <input class="btn btn-primary btn-down" type="button" onclick="localStorage.removeItem('intro'); location.href='/#registerationform';" value=":register-link"/>
+                    </div>
+                </div>
+                <div class="card grid grid-vertical" id="business-course">
+                    <div>
+                        <h2 class="alert alert-success">:business</h2>
+                        <p>:2-buisness-text</p>
+                    </div>
+                    <div>
+                        <input class="btn btn-primary btn-down" type="button" onclick="localStorage.removeItem('intro'); location.href='/#registerationform';" value=":register-link"/>
+                    </div>
+                </div>
+                <div class="card grid grid-vertical" id="ielts-course">
+                    <div>
+                        <h2 class="alert alert-success">:exam</h2>
+                        <p>:2-exam-text</p>
+                    </div>
+                    <div>
+                        <input class="btn btn-primary btn-down" type="button" onclick="localStorage.removeItem('intro');  location.href='/#registerationform';" value=":register-link"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+        <script>
+            $(function(){
+            $("#footer-placeholder").load("views/footer.html");
+            });
+        </script>
+        <!--end of Footer-->
+    </section>
+</body>
+<script src="scripts/registeration.js"></script>
+<script src="scripts/slideshow.js"></script>
+<!-- <script>
+    // loading
+window.addEventListener("load",function() {
+var loadScreen=document.querySelector(".preloader-container");
+document.body.removeChild(loadScreen);
+$(".intro-hide").show();
+})
+// loading end
+</script> -->
+
+</html>

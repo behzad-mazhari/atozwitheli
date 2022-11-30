@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, width=device-width, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/circular.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/fonts.css" />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->  
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <title>A to Z With Eli | about</title>
+    <link rel = "icon" href = "/images/logos/icon.png" type = "image/x-icon">
+    
+
+</head>
+<body>
+
+    <div class="preloader-container">
+        <div class="preloader">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+        <div class="bar bar4"></div>
+        <div class="bar bar5"></div>
+        <div class="bar bar6"></div>
+        <div class="bar bar7"></div>
+        <div class="bar bar8"></div>
+        <div class="bar bar9"></div>
+        <div class="bar bar10"></div>
+        <div class="bar bar11"></div>
+        <h2 style="text-align: center; color: var(--secondary-color);">LOADING</h2>
+        </div>
+    </div>
+
+    <section class="intro-hide">
+        <!--Navigation bar-->
+        <div id="nav-placeholder"></div>
+        <script>
+            $(function(){
+            $("#nav-placeholder").load("views/nav.html");
+            });
+        </script>
+        <!--end of Navigation bar-->
+
+
+        
+
+        <!-- Head -->
+        
+        <section class="features-head bg-primary py-4">
+            <div class="about container grid">
+                <div class="card">
+                    <h1 class="lg">:2-about-eli</h1>
+                    <p class="lead">
+                        :2-about-eli-text
+                    </p>
+                </div>
+                <div>
+                    <img class="rotate" src="images/logos/AtoZWithEli.png" alt="ELI">
+                    
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        <!-- Sub head -->
+        <!--
+        <section class="features-sub-head bg-light py-3">
+            <div class="container grid">
+                <div>
+                    <h1 class="md">The Loruki Platform</h1>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor cupiditate dignissimos temporibus perspiciatis quae! Suscipit qui, consectetur ea consequatur, doloribus repellendus quasi, aut corporis nam alias culpa. Nostrum, inventore accusantium!
+                    </p>
+                </div>
+                <img src="images/server2.png" alt="">
+            </div>
+        </section>
+
+        <section class="features-main my-2">
+            <div class="container grid grid-3">
+                <div class="card flex">
+                    <i class="fas fa-server fa-3x"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo saepe corrupti et dolorem voluptate at, nostrum rem voluptatem ab alias quia molestiae ea, libero nihil deserunt. Molestias, eum? Necessitatibus!</p>
+                </div>
+                <div class="card flex">
+                    <i class="fas fa-network-wired fa-3x"></i>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                        recusandae perferendis culpa, reiciendis a itaque debitis qui vel
+                        dignissimos ipsum!
+                    </p>
+                </div>
+                <div class="card flex">
+                    <i class="fas fa-laptop-code fa-3x"></i>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+                        magnam.
+                    </p>
+                </div>
+                <div class="card flex">
+                    <i class="fas fa-database fa-3x"></i>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, a!
+                    </p>
+                </div>
+                <div class="card flex">
+                    <i class="fas fa-power-off fa-3x"></i>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+                        magnam.
+                    </p>
+                </div>
+                <div class="card flex">
+                    <i class="fas fa-upload fa-3x"></i>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+                        magnam.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        -->
+
+        <!-- Footer -->
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+        <script>
+            $(function(){
+            $("#footer-placeholder").load("views/footer.html");
+            });
+        </script>
+        <!--end of Footer-->
+    </section>
+</body>
+
+<!-- <script>
+    // loading
+window.addEventListener("load",function() {
+var loadScreen=document.querySelector(".preloader-container");
+document.body.removeChild(loadScreen);
+// $(".intro-hide").show();
+})
+</script> -->
+</html>

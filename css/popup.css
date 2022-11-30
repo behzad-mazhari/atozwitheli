@@ -1,0 +1,92 @@
+.popup {
+  /*font-size: larger; */
+  /* width: 90%; */
+  /* border: dotted 4px rgb(179, 255, 0); */
+
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  position: absolute;
+
+  visibility: hidden;
+  /* border: dotted 4px blue; */
+  width: 160%;
+  height: 300px;
+
+  background-color:  var(--primary-color);
+  color: #fff;
+  font-size: large;
+  text-align: center;
+  margin: auto;
+  border-radius: 30px 30px;
+  padding: 10% 10%;
+  position: absolute;
+  z-index: 1;
+  bottom: 0px;
+  left: -30%;
+  /* margin-left: -80px; */
+}
+
+.popup .popupenquary {
+  position: absolute;
+  visibility: hidden;
+  background-color: Var(--secondary-color);
+  color: black;
+  z-index: 10;
+  bottom: 30px;
+  font-size: large;
+  text-align: center;
+  margin: auto;
+  width: 160%;
+  left: -30%;
+  border-radius: 30px 30px;
+
+
+}
+
+.pop a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: white;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  /* top: 100%; */
+  /* left: 50%; */
+  /* margin-left: -5px; */
+  /* border-width: 5px; */
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 3s;
+  animation: fadeIn 3s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}

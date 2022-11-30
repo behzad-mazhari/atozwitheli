@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, width=device-width, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/circular.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/fonts.css" />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <title>A to Z With Eli | blog</title>
+    <link rel="icon" href="/images/logos/icon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="preloader-container">
+        <div class="preloader">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+        <div class="bar bar4"></div>
+        <div class="bar bar5"></div>
+        <div class="bar bar6"></div>
+        <div class="bar bar7"></div>
+        <div class="bar bar8"></div>
+        <div class="bar bar9"></div>
+        <div class="bar bar10"></div>
+        <div class="bar bar11"></div>
+        <h2 style="text-align: center; color: var(--secondary-color);">LOADING</h2>
+        </div>
+    </div>
+    <section class="intro-hide">
+
+        <!--Navigation bar-->
+        <div id="nav-placeholder"></div>
+        <script>
+            
+            $(function () {
+                $("#nav-placeholder").load("views/nav.html");
+            });
+        </script>
+        <!--end of Navigation bar-->
+
+        <!-- Showcase -->
+
+        <!-- Blog history -->
+        <section class="blog docs-main my-4">
+            <div class="container grid">
+                <div class="card bg-light p-3">
+                    <h3 class="my-2">topics</h3>
+                    <nav>
+                        <ul>
+                            <li><a onclick="ClickDoc()" href="#">Cold Weather</a></li>
+                            <li><a onclick="ClickDoc()" href="#">Love</a></li>
+                            <li><a onclick="ClickDoc()" href="#">Vaccination</a></li>
+                            <li><a onclick="ClickDoc()" href="#">Family</a></li>
+                            <li><a onclick="ClickDoc()" href="#">Losing</a></li>
+                            <li><a onclick="ClickDoc()" href="#">Tie</a></li>
+                            <li><a onclick="ClickDoc()" href="#">Winning</a></li>
+                            <li><a onclick="ClickDoc()" href="#">Bathroom</a></li>
+                            <li><a onclick="ClickDoc()" href="#">Where Live</a></li>
+                            <li><a onclick="ClickDoc()" href="#">Nice Weather</a></li>
+                            <li><a onclick="ClickDoc()" href="#">Weather</a></li>
+                            <li><a onclick="ClickDoc()" href="#">Thirsty</a></li>
+                            <li><a onclick="ClickDoc()" href="#">Hungry</a></li>
+                            <li><a onclick="ClickDoc()" href="#">Cost</a></li>
+                        </ul>
+                    </nav>
+                    <!-- 
+                    <h3 class="my-2">Miscellaneous</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Setting up a container</a></li>
+                            <li><a href="#">Using the CLI</a></li>
+                            <li><a href="#">Managing resources</a></li>
+                            <li><a href="#">Upgrade & downgrade</a></li>
+                        </ul>
+                    </nav> -->
+                </div>
+                <div class="card blog">
+                    <div>
+                        <h2 class="text-center">ENGLISH</h2>
+
+                    </div>
+
+
+                    <!--Videos-->
+                    <div>
+                        <video oncontextmenu="return false;" id="video-eng" width="100%" controls controlsList="nodownload">
+
+                            <source src="" type="video/mp4">
+
+                            Your browser does not support the video tag.
+                        </video>
+                        <div id="text-eng" class="card text-center">
+
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="text-center grid">
+
+                        <div>
+                            <h2 class="text-center">ITALIAN</h2>
+                            <video oncontextmenu="return false;" id="video-ita" width="100%" controls controlsList="nodownload">
+
+                                <source src="" type="video/mp4">
+
+                                Your browser does not support the video tag.
+                            </video>
+                            <div id="text-ita" class="card text-center">
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-center">FRENCH</h2>
+                            <video oncontextmenu="return false;" id="video-fre" width="100%" controls controlsList="nodownload">
+
+                                <source src="" type="video/mp4">
+
+                                Your browser does not support the video tag.
+                            </video>
+                            <div id="text-fre" onload="LoadDoc()" class="card text-center">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--
+                    <div class="alert alert-success">
+                        <i class="fas fa-info"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, animi?
+                    </div>
+
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima totam magni eius vitae velit id, atque veritatis! At, vero porro.</p>
+                    <a href="#" class="btn btn-primary">Install CLI</a>
+
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>Windows 10, Mac OSX, Linux</li>
+                        <li>Node.js v12 or higher</li>
+                    </ul>
+
+                    <h3>Install</h3>
+                    <p>Mac (Homebrew)</p>
+                    <pre><code>$ brew install loruki-cli</code></pre>
+                    <p>NPM</p>
+                    <pre><code>$ npm install loruki-cli</code></pre>
+                    <p>Yarn</p>
+                    <pre><code>$ yarn install loruki-cli</code></pre>
+                    -->
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+        <script>
+            $(function () {
+                $("#footer-placeholder").load("views/footer.html");
+            });
+        </script>
+        <!--end of Footer-->
+    </section>
+</body>
+
+<script src="scripts/registeration.js"></script>
+<!-- <script src="scripts/slideshow.js"></script> -->
+<script src="scripts/blog.js"></script>
+<script src="scripts/scroll.js"></script>
+
+</html>
